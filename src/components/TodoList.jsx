@@ -10,9 +10,12 @@ function TodoList({ todos, toggleTodo, removeTodo }) {
     document.getElementById("status").style.justifyContent = "center";
     document.getElementById("status").style.alignItems = "center";
     document.getElementById("status").style.color = "gray";
-
   } 
-},[todos]
+  else{
+    document.getElementById("status").style.display = "";
+  }
+}
+,[todos]
   );
   return (
     <div id='status'>
