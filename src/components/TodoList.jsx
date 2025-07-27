@@ -13,10 +13,22 @@ function TodoList({ todos, toggleTodo, removeTodo }) {
   } 
   else{
     document.getElementById("status").style.display = "";
+    document.getElementById("status").style.color = "black";
   }
 }
 ,[todos]
   );
+
+  // useEffect(()=>{
+  //   if (toggleTodo) {
+  //     document.getElementById("status").style.color = "black";
+  //   } 
+  //   else{
+  //     document.getElementById("status").style.color = "gray";
+  //   }
+  // }
+  // ,[toggleTodo]
+  //   );
   return (
     <div id='status'>
       {todos.length == 0 && 'You have nothing to do today!'}
