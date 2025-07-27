@@ -12,10 +12,11 @@ function TodoForm({ addTodo }) {
       <input
         type="text"
         value={content}
-        placeholder="Enter new todo"
+        className='form-input'
+        placeholder="Get things done. Enter your task for today"
         onChange={(e) => setContent(e.target.value)}
       />
-      <button type="submit"> Submit </button>
+      <button className="submit" type="submit"> Submit </button>
     </form>
   )
 }

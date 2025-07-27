@@ -5,3 +5,54 @@
   text-align: center;
 }
 
+div{
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.form-input{
+  width:50%;
+  border: none;
+  background-color: rgb(190,190,190, 0.3);
+  padding: 0.6rem 0.9rem;
+  border-radius: 20px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.submit{
+  border-radius: 20px;
+  padding: 0.6rem 0.9rem;
+  border: none;
+  background-color: #202020;
+  color: white;
+}
+
+.submit:hover{
+  background-color: #484848;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+}
+
+.to-do{
+  margin-top: 2%;
+  justify-content: space-between;
+}
+
+.content{
+  display: inline-block;
+  text-align: left;
+  width: 50vw;
+}
+
+.red-btn{
+  padding: 1rem 1rem;
+  border: none;
+  background-color: transparent;
+  color: red;
+}

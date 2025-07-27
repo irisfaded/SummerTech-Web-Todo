@@ -26,7 +26,7 @@ function Home() {
   }
   return (
     <div>
-      <h1> Todo list </h1>
+      <h1>To do</h1>
       <TodoForm addTodo={addTodo}/>
       <TodoList todos={todos} toggleTodo={toggleTodo} removeTodo={removeTodo}/>
     </div>

@@ -2,10 +2,13 @@ import React from 'react'
 
 function Todo({ id, content, toggleTodo, removeTodo }) {
   return (
-    <div>
+    <div className='row to-do'>
+
+      <div className='row'>
       <input type="checkbox" onChange={(e) => toggleTodo(id, e.target.checked)} />
-      <p>{content}</p>
-      <button type="button" onClick={() => removeTodo(content)}> Remove </button>
+      <p className='content'>{content}</p>
+      </div>
+      <button type="button" onClick={() => removeTodo(content)} className='red-btn'> X </button>
     </div>
   )
 }

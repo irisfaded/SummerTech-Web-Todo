@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Todo from './Todo'
 
 function TodoList({ todos, toggleTodo, removeTodo }) {
+
+  useEffect(()=>{
+  if (todos.length == 0) {
+    document.getElementById("status").style.display = "flex";
+    document.getElementById("status").style.height = "40vh";
+    document.getElementById("status").style.justifyContent = "center";
+    document.getElementById("status").style.alignItems = "center";
+  } 
+},[todos]
+  );
   return (
-    <div>
+    <div id='status'>
       {todos.length == 0 && 'You have nothing to do today!'}
       {todos.map((todo, i) => {
         return (
