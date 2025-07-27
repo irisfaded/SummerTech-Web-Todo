@@ -9,6 +9,8 @@ function TodoList({ todos, toggleTodo, removeTodo }) {
     document.getElementById("status").style.height = "40vh";
     document.getElementById("status").style.justifyContent = "center";
     document.getElementById("status").style.alignItems = "center";
+    document.getElementById("status").style.color = "gray";
+
   } 
 },[todos]
   );
