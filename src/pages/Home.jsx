@@ -24,6 +24,7 @@ function Home() {
   function toggleTodo(id, checked) {
     console.log(id, checked)
   }
+  
   return (
     <div>
       <h1>To do</h1>

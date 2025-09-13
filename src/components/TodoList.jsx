@@ -19,16 +19,6 @@ function TodoList({ todos, toggleTodo, removeTodo }) {
 ,[todos]
   );
 
-  // useEffect(()=>{
-  //   if (toggleTodo) {
-  //     document.getElementById("status").style.color = "black";
-  //   } 
-  //   else{
-  //     document.getElementById("status").style.color = "gray";
-  //   }
-  // }
-  // ,[toggleTodo]
-  //   );
   return (
     <div id='status'>
       {todos.length == 0 && 'You have nothing to do today!'}
